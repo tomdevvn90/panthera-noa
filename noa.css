@@ -1,0 +1,227 @@
+body, html {
+  font-family: "Red Hat Text";
+  font-size: 18px;
+  line-height: 1.3333333333em;
+  margin: 0;
+  padding: 0;
+  color: #202020; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-break: break-word; }
+
+.text-center {
+  text-align: center; }
+
+p {
+  margin-top: 0; }
+
+.font-circular-std {
+  font-family: "Circular Std"; }
+
+.font-red-hat-text {
+  font-family: "Red Hat Text"; }
+
+.font-red-hat-display {
+  font-family: "Red Hat Display"; }
+
+.fs {
+  font-size: 20px; }
+
+.fw-500 {
+  font-weight: 500; }
+
+.wrap {
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  grid-gap: 30px;
+  width: 100%;
+  max-width: 1190px;
+  margin: auto; }
+  .wrap .col-left .title {
+    font-family: "Circular Std";
+    font-size: 28px;
+    color: #092434;
+    letter-spacing: 0.17px;
+    line-height: 1.2857142857em;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 6px; }
+  .wrap .col-left .date {
+    font-family: "Circular Std"; }
+  .wrap .col-left .name-address {
+    font-family: "Red Hat Text";
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px; }
+    .wrap .col-left .name-address .info-wrap {
+      text-align: left;
+      display: inline-block; }
+  .wrap .col-left h3 {
+    font-family: "Red Hat Display";
+    font-weight: bold;
+    font-size: 22px;
+    color: #092434;
+    letter-spacing: -0.18px;
+    line-height: 1.2727272727em;
+    margin: 0;
+    margin-bottom: 15px; }
+  .wrap .col-left .img-means-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px; }
+    .wrap .col-left .img-means-wrap .img-l, .wrap .col-left .img-means-wrap .img-r {
+      margin-top: 20px; }
+    .wrap .col-left .img-means-wrap .img-m {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-left: 5px;
+      margin-right: 5px; }
+      .wrap .col-left .img-means-wrap .img-m span {
+        font-family: "Red Hat Display";
+        font-weight: bold;
+        font-size: 18px;
+        color: #092434;
+        letter-spacing: -0.15px;
+        line-height: 1.5555555556em; }
+  .wrap .col-left ul {
+    padding: 0;
+    list-style: none;
+    margin: 0 0 15px; }
+    .wrap .col-left ul li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .wrap .col-left ul li:before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        background: #279BE7;
+        display: inline-block;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 8px;
+                flex: 0 0 8px;
+        margin-right: 15px;
+        margin-top: 8px; }
+      .wrap .col-left ul li:not(:last-child) {
+        margin-bottom: 16px; }
+  .wrap .col-right .head-right {
+    padding: 30px 30px 24px;
+    background: #1E97E6;
+    color: #FFFFFF; }
+    .wrap .col-right .head-right h3 {
+      font-size: 1.3333333333em;
+      letter-spacing: -0.2px;
+      line-height: 1.1666666667em;
+      margin: 0;
+      margin-bottom: 16px; }
+    .wrap .col-right .head-right .info .item {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      color: white;
+      font-family: "Red Hat Text";
+      font-size: 20px;
+      letter-spacing: 0;
+      line-height: 1.4em; }
+      .wrap .col-right .head-right .info .item .value {
+        font-weight: bold; }
+    .wrap .col-right .head-right hr {
+      margin-top: 24px;
+      margin-bottom: 34px;
+      border: 0;
+      height: 1px;
+      background: white; }
+    .wrap .col-right .head-right .price {
+      font-family: "Red Hat Text";
+      font-size: 24px;
+      letter-spacing: 0;
+      line-height: 1; }
+      .wrap .col-right .head-right .price strong {
+        font-family: "Red Hat Text";
+        font-weight: 700;
+        font-size: 32px; }
+      .wrap .col-right .head-right .price-below {
+        font-size: 20px; }
+  .wrap .col-right .ct-right {
+    background: #E3EDF7;
+    padding: 30px;
+    color: #092434; }
+    .wrap .col-right .ct-right h3 {
+      font-family: "Red Hat Display";
+      font-weight: 700;
+      font-size: 22px;
+      letter-spacing: -0.18px;
+      line-height: 28px;
+      margin: 0;
+      margin-bottom: 10px; }
+    .wrap .col-right .ct-right h4 {
+      font-family: "Red Hat Text";
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 1.3333333333em;
+      margin-bottom: 16px; }
+    .wrap .col-right .ct-right hr {
+      margin-top: 24px;
+      margin-bottom: 24px;
+      border: 0;
+      height: 1px;
+      background: #9FB9CB; }
+    .wrap .col-right .ct-right .qr-code {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-gap: 22px;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-bottom: 30px;
+      margin-top: 24px; }
+      .wrap .col-right .ct-right .qr-code .link {
+        margin-top: 12px; }
+        .wrap .col-right .ct-right .qr-code .link img {
+          margin-right: 8px; }
+    .wrap .col-right .ct-right .icon-box {
+      margin-bottom: 30px;
+      display: grid;
+      grid-template-columns: 50px 1fr;
+      grid-gap: 20px;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .wrap .col-right .ct-right .icon-box .text a {
+        font-family: "Red Hat Text";
+        color: #202020;
+        letter-spacing: 0;
+        line-height: 1.3333333333em;
+        display: block;
+        text-decoration: none;
+        font-weight: 500; }
+    .wrap .col-right .ct-right .bpay-wrap {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-gap: 15px; }
+      .wrap .col-right .ct-right .bpay-wrap .item {
+        padding: 10px;
+        border: 1px solid #183168;
+        font-weight: 500;
+        color: #183168; }
+        .wrap .col-right .ct-right .bpay-wrap .item span {
+          font-weight: normal;
+          margin-left: 10px; }

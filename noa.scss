@@ -1,0 +1,306 @@
+@function em($pixels, $context: 16) {
+    @return #{$pixels/$context}em;
+}
+
+$fontRedHatDisplay: 'Red Hat Display';
+$fontRedHatText: 'Red Hat Text';
+$fontCircularStd: 'Circular Std';
+body, html {
+    font-family: $fontRedHatText;
+    font-size: 18px;
+    line-height: em(24, 18);
+    margin: 0;
+    padding: 0;
+    color: #202020;
+}
+
+* {
+    box-sizing: border-box;
+    word-break: break-word;
+}
+
+.text-center {
+    text-align: center;
+}
+
+p {
+    margin-top: 0;
+}
+
+.font-circular-std {
+    font-family: $fontCircularStd;
+}
+
+.font-red-hat-text {
+    font-family: $fontRedHatText;
+}
+
+.font-red-hat-display {
+    font-family: $fontRedHatDisplay;
+}
+
+.fs {
+    font-size: 20px;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.wrap {
+    display: grid;
+    grid-template-columns: 55fr 45fr;
+    grid-gap: 30px;
+    width: 100%;
+    max-width: 1190px;
+    margin: auto;
+
+    .col-left {
+        //max-width: 55%;
+        //flex: 0 0 55%;
+        .title {
+            font-family: $fontCircularStd;
+            font-size: 28px;
+            color: #092434;
+            letter-spacing: 0.17px;
+            line-height: em(36, 28);
+            margin: 0;
+            margin-top: 30px;
+            margin-bottom: 6px;
+        }
+
+        .date {
+            font-family: $fontCircularStd;
+        }
+
+        .name-address {
+            font-family: $fontRedHatText;
+            font-weight: 500;
+            font-size: 20px;
+            text-align: center;
+            padding-top: 100px;
+            padding-bottom: 100px;
+
+            .info-wrap {
+                text-align: left;
+                display: inline-block;
+            }
+        }
+
+        h3 {
+            font-family: $fontRedHatDisplay;
+            font-weight: bold;
+            font-size: 22px;
+            color: #092434;
+            letter-spacing: -0.18px;
+            line-height: em(28, 22);
+            margin: 0;
+            margin-bottom: 15px;
+        }
+
+        .img-means-wrap {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            margin-bottom: 30px;
+
+            .img-l, .img-r {
+                margin-top: 20px;
+            }
+
+            .img-m {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin-left: 5px;
+                margin-right: 5px;
+
+                span {
+                    font-family: $fontRedHatDisplay;
+                    font-weight: bold;
+                    font-size: 18px;
+                    color: #092434;
+                    letter-spacing: -0.15px;
+                    line-height: em(28, 18);
+                }
+            }
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+            margin: 0 0 15px;
+
+            li {
+                display: flex;
+
+                &:before {
+                    content: '';
+                    width: 8px;
+                    height: 8px;
+                    background: #279BE7;
+                    display: inline-block;
+                    flex: 0 0 8px;
+                    margin-right: 15px;
+                    margin-top: 8px;
+
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
+
+    .col-right {
+        //max-width: 45%;
+        //flex: 0 0 45%;
+
+        .head-right {
+            padding: 30px 30px 24px;
+            background: #1E97E6;
+            color: #FFFFFF;
+
+            h3 {
+                font-size: em(24, 18);
+                letter-spacing: -0.2px;
+                line-height: em(28, 24);
+                margin: 0;
+                margin-bottom: 16px;
+            }
+
+            .info {
+                .item {
+                    display: grid;
+                    grid-template-columns: 1fr auto;
+                    color: white;
+                    font-family: $fontRedHatText;
+                    font-size: 20px;
+                    letter-spacing: 0;
+                    line-height: em(28, 20);
+
+                    .name {
+                    }
+
+                    .value {
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            hr {
+                margin-top: 24px;
+                margin-bottom: 34px;
+                border: 0;
+                height: 1px;
+                background: white;
+            }
+
+            .price {
+                font-family: $fontRedHatText;
+                font-size: 24px;
+                letter-spacing: 0;
+                line-height: 1;
+
+                strong {
+                    font-family: $fontRedHatText;
+                    font-weight: 700;
+                    font-size: 32px;
+                }
+
+                &-below {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .ct-right {
+            background: #E3EDF7;
+            padding: 30px;
+            color: #092434;
+
+            h3 {
+                font-family: $fontRedHatDisplay;
+                font-weight: 700;
+                font-size: 22px;
+                letter-spacing: -0.18px;
+                line-height: 28px;
+                margin: 0;
+                margin-bottom: 10px;
+            }
+
+            h4 {
+                font-family: $fontRedHatText;
+                font-weight: 500;
+                letter-spacing: 0;
+                line-height: em(24, 18);
+                margin-bottom: 16px;
+            }
+
+            hr {
+                margin-top: 24px;
+                margin-bottom: 24px;
+                border: 0;
+                height: 1px;
+                background: #9FB9CB;
+            }
+
+            .qr-code {
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-gap: 22px;
+                align-items: center;
+                margin-bottom: 30px;
+                margin-top: 24px;
+
+                .link {
+                    margin-top: 12px;
+
+                    img {
+                        margin-right: 8px;
+                    }
+                }
+            }
+
+            .icon-box {
+                margin-bottom: 30px;
+                display: grid;
+                grid-template-columns: 50px 1fr;
+                grid-gap: 20px;
+                align-items: center;
+
+                .text {
+                    a {
+                        font-family: $fontRedHatText;
+                        color: #202020;
+                        letter-spacing: 0;
+                        line-height: em(24, 18);
+                        display: block;
+                        text-decoration: none;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .bpay-wrap {
+                display: grid;
+                grid-template-columns: auto 1fr;
+                grid-gap: 15px;
+
+                .item {
+                    padding: 10px;
+                    border: 1px solid #183168;
+                    font-weight: 500;
+                    color: #183168;
+
+                    span {
+                        font-weight: normal;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+}

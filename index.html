@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Panthera</title>
+  <link href="assets/fonts/stylesheet.css" rel="stylesheet" media="all" />
+  <link href="assets/fonts/CircularStd/stylesheet.css" rel="stylesheet" media="all" />
+  <link href="noa.css" rel="stylesheet" media="all" />
+</head>
+<body>
+<div class="wrap">
+  <div class="col-left">
+    <div class="logo"><img width="280" src="assets/logo.png" alt="logo"></div>
+    <h2 class="title">Notice of Assignment of Debt</h2>
+    <span class="date">@CurrentDate</span>
+    <div class="name-address">
+      <div class="info-wrap">@FullName <br>@Address</div>
+    </div>
+    <p>Dear @FullName,</p>
+    <p class="font-circular-std">This letter is to formally notify you that @ClientDisplayName has legally assigned your
+      outstanding debt, all of its
+      legal and beneficial right, title, and to Panthera Finance Pty Ltd. Based on information provided to us, the
+      account had an outstanding amount of <span class="fw-500">@DebtOutstanding</span> as of 20 July 2020. </p>
+      <!---->
+    <h3>What this means</h3>
+    <ul>
+      <li>The amount is no longer owed to Telstra, and we now legally own this account. </li>
+      <li>All payments made towards paying off the amount, and communications about the account, should now be directed to us, rather than Telstra.</li>
+    </ul>
+    <div class="img-means-wrap">
+      <div class="img-l"><img src="assets/img/telstra.svg" alt="telstra"></div>
+      <div class="img-m"><img src="assets/img/paper.svg" alt="paper"> <span>@DebtOutstanding</span></div>
+      <div class="img-r"><img src="assets/img/pan.svg" alt="pan"></div>
+    </div>
+      <!---->
+    <h3>What now?</h3>
+    <p><span class="fw-500">The first step</span> is to contact us to acknowledge you have received this letter and
+      explore your
+      payment
+      options. The best way to do this is by logging in to <span class="fw-500">panthera.com.au</span> using your <span class="fw-500">reference
+        number</span> and your <span class="fw-500">date of birth.</span></p>
+      <!---->
+    <h3>The good news is</h3>
+    <p><span class="fw-500">You don’t have to pay today</span>, we just need you to contact us so we can work with you to
+      figure out what payment option works best for you and your circumstances. We also have a range of options to assist you if you’re experiencing financial hardship.</p>
+    <p>We look forward to hearing from you. </p>
+    <p>Yours faithfully,</p>
+    <img src="assets/img/signature.svg" alt="signature">
+    <div><strong>Martin Duesing</strong></div>
+    <p>Operations Manager</p>
+  </div>
+  <div class="col-right">
+    <div class="head-right">
+      <h3>Your Details</h3>
+      <div class="info">
+        <div class="item">
+          <div class="name">Reference Number:</div>
+          <div class="value">@ClientReferenceNumber</div>
+        </div>
+        <div class="item">
+          <div class="name">Original Provider:</div>
+          <div class="value">@ClientDisplayName</div>
+        </div>
+        <div class="item">
+          <div class="name">Original Due Date:</div>
+          <div class="value">@DueDate</div>
+        </div>
+        <div class="item">
+          <div class="name">Outstanding Amount:</div>
+          <div class="value">@DebtOutstanding</div>
+        </div>
+      </div>
+      <hr>
+      <div class="price text-center">Or <strong>$17.56</strong> weekly</div>
+      <div class="price-below text-center">over 12 months.</div>
+    </div>
+    <div class="ct-right">
+      <h3>Other ways to contact us</h3>
+      <div class="qr-code">
+        <img src="assets/img/qr.svg" alt="qr">
+        <div class="text">
+          Chat online with Web Chat at <strong>@CompanyEmail</strong>
+          <div class="link"><img src="assets/img/arrow.svg" alt="qr">Or scan the QR code</div>
+        </div>
+      </div>
+      <div class="icon-box">
+        <img src="assets/img/sms.svg" alt="sms">
+        <div class="text">
+          Send an SMS to
+          <a href="tel:@CompanyMobileNumber">@CompanyMobileNumber</a>
+        </div>
+      </div>
+      <div class="icon-box">
+        <img src="assets/img/email.svg" alt="email">
+        <div class="text">
+          Send an email to
+          <a href="mailto:manager@pantherafinance.com.au">manager@pantherafinance.com.au</a>
+        </div>
+      </div>
+      <div class="icon-box">
+        <img src="assets/img/phone.svg" alt="phone">
+        <div class="text">
+          Call us on
+          <a href="tel:@CompanyPhoneNumber">@CompanyPhoneNumber</a>
+        </div>
+      </div>
+        <!---->
+      <h3>What happens if you don’t contact us?</h3>
+      <p>Panthera is the final stop for managing this account and we’re here to help you see its end. </p>
+      <h4>If we don’t hear from you in the next 5 days:</h4>
+      <div class="icon-box">
+        <img src="assets/img/live.svg" alt="live">
+        <div class="text">live agents will call you by phone</div>
+      </div>
+      <div class="icon-box">
+        <img src="assets/img/notifi.svg" alt="notifi">
+        <div class="text">SMS and email reminders will be sent to you</div>
+      </div>
+      <h4>If we’re unable to get in contact with you:</h4>
+      <div class="icon-box">
+        <img src="assets/img/gavel.svg" alt="gavel">
+        <div class="text">We may explore further legal avenues including a default listing on your credit profile</div>
+      </div>
+        <!---->
+      <hr>
+      <p>Panthera Finance Pty Ltd <br> PO Box 388, Toowong QLD 4066</p>
+      <div class="bpay-wrap">
+        <img src="assets/img/bpay.svg" alt="bpay">
+        <div class="item">
+          <div class="code">Biller code: <span>XXXX</span></div>
+          <div class="ref">Ref: <span>XXXX XXXX XXXX</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

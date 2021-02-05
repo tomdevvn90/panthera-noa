@@ -1,0 +1,57 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-text font-size="18px" line-height="24px" />
+      <mj-section background-color="#fff" />
+    </mj-attributes>
+    <mj-style> * { color: #092434; } </mj-style>
+  </mj-head>
+  <mj-body background-color="#eee" width="1190px">
+    <mj-section>
+      <mj-column>
+        <mj-image align="left" width="300px" src="assets/logo.png" />
+        <mj-text font-size="28px" line-height="36px"> Notice of Assignment of Debt </mj-text>
+        <mj-text font-size="18px" line-height="24px">20 July 2020 </mj-text>
+        <mj-text align="center" font-size="20px" padding-top="80px" padding-bottom="80px" line-height="24px">
+          <span style=" text-align: left; display: inline-block; ">Mr James BOND <br> 200 QUEEN STREET<br> MELBOURNE VIC 3000</span>
+        </mj-text>
+        <mj-text>Dear James Bond,</mj-text>
+        <mj-text>This letter is to formally notify you that Telstra has legally assigned your outstanding debt, all of its legal and beneficial right, title, and to Panthera Finance Pty Ltd. Based on information provided to us, the account had an outstanding amount of $920.00 as of 20 July 2020. </mj-text>
+        <mj-text font-weight="700" font-size="22px" line-height="28px">What this means</mj-text>
+        <mj-table font-size="18px">
+          <tr style="vertical-align: top;">
+            <td style="padding: 0 ; padding-bottom: 10px; color: #279BE7;"> ■ </td>
+            <td style="padding: 0 15px; padding-bottom: 10px;">The amount is no longer owed to Telstra, and we now legally own this account. </td>
+          </tr>
+          <tr style="vertical-align: top;">
+            <td style="padding: 0; color: #279BE7;"> ■ </td>
+            <td style="padding: 0 15px;">All payments made towards paying off the amount, and communications about the account, should now be directed to us, rather than Telstra.</td>
+          </tr>
+        </mj-table>
+        <mj-image align="center" width="370px" src="assets/progress.png" />
+        <mj-text padding-top="0" align="center">$960.35</mj-text>
+        <mj-text font-weight="700" font-size="22px" line-height="28px">What now?</mj-text>
+        <mj-text><strong>The first step</strong> is to contact us to acknowledge you have received this letter and explore your payment options. The best way to do this is by logging in to <strong>panthera.com.au</strong> using your <strong>reference number</strong> and your <strong>date of birth.</strong></mj-text>
+        <mj-text font-weight="700" font-size="22px" line-height="28px"> The good news is</mj-text>
+        <mj-text><strong>You don’t have to pay today</strong>, we just need you to contact us so we can work with you to figure out what payment option works best for you and your circumstances. We also have a range of options to assist you if you’re experiencing financial hardship. </mj-text>
+        <mj-text>We look forward to hearing from you. </mj-text>
+        <mj-text>Yours faithfully, </mj-text>
+        <mj-image padding-top="0" padding-bottom="0" align="left" width="150px" src="assets/signature.png" />
+        <mj-text padding-bottom="0" font-weight="700">Martin Duesing</mj-text>
+        <mj-text padding-top="0">Operations Manager</mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-table container-background-color="red" font-size="18px">
+          <tr>
+          	<th>Your Details</th>
+          	<th>Your Details</th>
+          </tr>
+          <tr style="vertical-align: top;">
+            <td style="padding: 0 ; padding-bottom: 10px; color: #279BE7;">Reference Number:</td>
+            <td style="padding: 0 15px; padding-bottom: 10px;">Reference Number:</td>
+          </tr>
+        </mj-table>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
